@@ -63,7 +63,7 @@ public class GenderAndAgeCalculator {
 
     public static String getGenderByFullName(String middleName) {
         if (middleName.length() < 3) {
-            throw new IllegalArgumentException("Фамилия длины меньше трёх символов? Что?");
+            throw new IllegalArgumentException("Отчество длины меньше трёх символов? Что?");
         }
         String lastThreeLetters = middleName.substring(middleName.length() - 3);
         return switch (lastThreeLetters) {
